@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netgee-k | Network Engineer & Cybersecurity Specialist</title>
+    <title>Jesse Kimani | Network Engineer & Cybersecurity Specialist</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -458,6 +458,109 @@
             color: var(--primary);
         }
         
+        /* Services Section */
+        #services {
+            background-color: var(--darker);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: var(--dark);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 240, 255, 0.2);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-card p {
+            color: var(--gray);
+        }
+        
+        /* Certifications Section */
+        #certifications {
+            background-color: var(--dark);
+        }
+        
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .certification-card {
+            background: var(--darker);
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 240, 255, 0.2);
+        }
+        
+        .certification-logo {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 240, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .certification-logo img {
+            width: 40px;
+            height: auto;
+        }
+        
+        .certification-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .certification-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .certification-date {
+            color: var(--primary);
+            font-size: 0.8rem;
+            font-family: 'Fira Code', monospace;
+        }
+        
         /* Contact Section */
         #contact {
             background-color: var(--darker);
@@ -696,7 +799,7 @@
                 padding: 10px 20px;
             }
             
-            .projects-grid {
+            .projects-grid, .services-grid, .certifications-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -727,14 +830,16 @@
     <header id="header">
         <div class="container">
             <nav>
-                <a href="#" class="logo">Netgee-k</a>
+                <a href="#" class="logo">Jesse Kimani</a>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -746,7 +851,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Hi, I'm <span>Netgee-k</span><br>
+                    <h1>Hi, I'm <span>Jesse Kimani</span><br>
                     <span class="typewriter">Network Engineer</span></h1>
                     <p>Building secure, scalable, and resilient infrastructure with a focus on cybersecurity and distributed systems. Passionate about creating unbreakable systems and exploring cutting-edge technologies.</p>
                     <div class="btn-group">
@@ -769,31 +874,31 @@
             </div>
             <div class="about-content">
                 <div class="about-text animate-on-scroll">
-                    <h3>Network Engineer • Cybersecurity Specialist • Builder of Unbreakable Systems</h3>
-                    <p>I'm passionate about networking, cybersecurity, and using technology for good. With expertise in building secure, scalable, and resilient infrastructure, I focus on creating systems that stand up to modern threats.</p>
-                    <p>Currently, I'm working on projects involving distributed systems, air-gapped environments, zero trust architecture, and offensive security systems. I'm also exploring software-defined radio, cloud-native technologies, and sustainable infrastructure.</p>
-                    <p>My motto: "Build like a hacker. Secure like a paranoid. Share like an open-source hero."</p>
+                    <h3>Network Engineer | Cybersecurity Specialist | Penetration Tester</h3>
+                    <p>I am an experienced computer network engineer and penetration tester with a strong background in various areas of networking, security, and technology. As a Network and security Professional, I have in-depth knowledge and expertise in computer network design, network administration, switching, routing, network monitoring and optimization, data and network security, Internet of Things (IoT), cloud computing, virtualization, wireless networks, and network infrastructure.</p>
+                    <p>With my CompTIA PenTest+ certification, I possess the necessary skills to identify and address vulnerabilities in computer systems. Throughout my career, I have successfully designed and implemented secure network architectures, ensuring the confidentiality, integrity, and availability of critical data.</p>
+                    <p>I have hands-on experience in conducting penetration testing and vulnerability assessments to identify potential weaknesses in systems and provide recommendations for remediation. My proficiency in intrusion detection and network segmentation enables me to develop robust security measures to safeguard against cyber threats.</p>
                     
-                    <h3 style="margin-top: 30px;">Tech Stack</h3>
+                    <h3 style="margin-top: 30px;">Technical Skills</h3>
                     <div class="skills">
+                        <span class="skill-chip">Vulnerability Assessment</span>
+                        <span class="skill-chip">Penetration Testing</span>
+                        <span class="skill-chip">Network Security</span>
+                        <span class="skill-chip">Cisco Networking</span>
+                        <span class="skill-chip">AWS/Azure</span>
+                        <span class="skill-chip">Docker/Kubernetes</span>
                         <span class="skill-chip">Python</span>
                         <span class="skill-chip">JavaScript</span>
-                        <span class="skill-chip">Bash</span>
-                        <span class="skill-chip">Go</span>
-                        <span class="skill-chip">C</span>
-                        <span class="skill-chip">Flask</span>
-                        <span class="skill-chip">Django</span>
-                        <span class="skill-chip">AWS</span>
-                        <span class="skill-chip">Azure</span>
-                        <span class="skill-chip">Docker</span>
-                        <span class="skill-chip">Kubernetes</span>
-                        <span class="skill-chip">Terraform</span>
+                        <span class="skill-chip">Bash Scripting</span>
+                        <span class="skill-chip">Web Development</span>
+                        <span class="skill-chip">Digital Forensics</span>
+                        <span class="skill-chip">SIEM Tools</span>
                         <span class="skill-chip">Metasploit</span>
                         <span class="skill-chip">Wireshark</span>
-                        <span class="skill-chip">Cisco R/S</span>
-                        <span class="skill-chip">BGP/OSPF</span>
-                        <span class="skill-chip">Proxmox</span>
-                        <span class="skill-chip">Grafana</span>
+                        <span class="skill-chip">Nmap</span>
+                        <span class="skill-chip">Burp Suite</span>
+                        <span class="skill-chip">OSINT</span>
+                        <span class="skill-chip">PCI DSS</span>
                     </div>
                 </div>
                 <div class="about-image animate-on-scroll">
@@ -809,11 +914,75 @@
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Professional Services</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>Comprehensive security assessments including vulnerability scanning, ethical hacking, and remediation guidance to strengthen your defenses against cyber threats.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Design & Security</h3>
+                    <p>Custom secure network architectures with security-first approach, including SDN, VLANs, routing protocols, and secure remote access solutions.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web & Software Development</h3>
+                    <p>Secure application development with focus on security best practices, from frontend interfaces to backend APIs and databases.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.3s;">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Digital Forensics</h3>
+                    <p>Incident response, evidence collection, and analysis for legal proceedings or internal investigations following security breaches.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.4s;">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Telemetry & Monitoring</h3>
+                    <p>Implementation of robust monitoring solutions with Grafana, Prometheus, and custom dashboards for network and security visibility.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.5s;">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Security</h3>
+                    <p>AWS and Azure security configurations, including IAM policies, secure VPC design, and cloud-native security tools implementation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <div class="section-title animate-on-scroll">
-                <h2>My Projects</h2>
+                <h2>Featured Projects</h2>
             </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
@@ -822,8 +991,8 @@
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Metasploitable3">
                     </div>
                     <div class="project-info">
-                        <h3>Metasploitable3</h3>
-                        <p>A deliberately vulnerable VM built from the ground up with a large number of security vulnerabilities for training purposes.</p>
+                        <h3>Metasploitable2 Walkthrough</h3>
+                        <p>A comprehensive guide for testing and practicing penetration testing techniques on deliberately vulnerable virtual machines in controlled environments.</p>
                         <div class="project-tags">
                             <span class="project-tag">Security</span>
                             <span class="project-tag">Penetration Testing</span>
@@ -831,7 +1000,7 @@
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> View Documentation</a>
                         </div>
                     </div>
                 </div>
@@ -839,19 +1008,19 @@
                 <!-- Project 2 -->
                 <div class="project-card animate-on-scroll" style="transition-delay: 0.1s;">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Distributed System">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="SDN Security">
                     </div>
                     <div class="project-info">
-                        <h3>Distributed System</h3>
-                        <p>A scalable distributed system framework for building and managing botnets (for educational purposes only).</p>
+                        <h3>SDN DDoS Detection</h3>
+                        <p>Research project assessing the susceptibility of Software Defined Networks (SDN) versus traditional networks to Distributed Denial of Service (DDoS) attacks.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Distributed Systems</span>
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Networking</span>
+                            <span class="project-tag">Network Security</span>
+                            <span class="project-tag">SDN</span>
+                            <span class="project-tag">Research</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Read Paper</a>
                         </div>
                     </div>
                 </div>
@@ -863,7 +1032,7 @@
                     </div>
                     <div class="project-info">
                         <h3>TillBase POS</h3>
-                        <p>A secure cloud-based point of sale and inventory management system with robust security features.</p>
+                        <p>A secure cloud-based point of sale and inventory management system with robust security features and PCI DSS compliance.</p>
                         <div class="project-tags">
                             <span class="project-tag">Web Application</span>
                             <span class="project-tag">Security</span>
@@ -873,6 +1042,52 @@
                             <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
                             <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications-grid">
+                <!-- Certification 1 -->
+                <div class="certification-card animate-on-scroll">
+                    <div class="certification-logo">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>CompTIA PenTest+</h3>
+                        <p>Validates skills and knowledge required to plan and scope an assessment, understand legal and compliance requirements, perform vulnerability scanning and penetration testing.</p>
+                        <div class="certification-date">Issued May 2023</div>
+                    </div>
+                </div>
+                
+                <!-- Certification 2 -->
+                <div class="certification-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="certification-logo">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>OPSWAT Data Transfer Security Associate</h3>
+                        <p>Certification in critical infrastructure protection for secure data transfer and malware prevention technologies.</p>
+                        <div class="certification-date">Issued Dec 2022</div>
+                    </div>
+                </div>
+                
+                <!-- Certification 3 -->
+                <div class="certification-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="certification-logo">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="certification-info">
+                        <h3>Cisco Certified Network Associate (CCNA)</h3>
+                        <p>Demonstrates ability to install, configure, operate, and troubleshoot medium-size routed and switched networks.</p>
+                        <div class="certification-date">Issued 2021</div>
                     </div>
                 </div>
             </div>
@@ -963,14 +1178,16 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <a href="#" class="footer-logo">Netgee-k</a>
+                <a href="#" class="footer-logo">Jesse Kimani</a>
                 <ul class="footer-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <p class="copyright">© 2023 Netgee-k. All rights reserved.</p>
+                <p class="copyright">© 2023 Jesse Kimani. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1001,7 +1218,7 @@
         
         // Typewriter effect
         const typewriterElement = document.querySelector('.typewriter');
-        const professions = ['Network Engineer', 'Cybersecurity Specialist', 'DevOps Engineer', 'Systems Architect'];
+        const professions = ['Network Engineer', 'Cybersecurity Specialist', 'Penetration Tester', 'DevOps Engineer'];
         let professionIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -1114,6 +1331,17 @@
         
         // Initialize glowing dots
         createGlowingDots();
+
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </body>
 </html>
