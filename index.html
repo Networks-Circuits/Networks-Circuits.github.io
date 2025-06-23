@@ -1353,49 +1353,6 @@
 
 
     </script>
-<!-- Add this below your existing script -->
-<script>
-(function () {
-  const btn = document.createElement("a");
-  btn.href = "https://wa.me/254707540010";
-  btn.target = "_blank";
-  btn.title = "Chat with us on WhatsApp";
-  btn.innerHTML = '<i class="fab fa-whatsapp"></i>';
-
-  // Style
-  Object.assign(btn.style, {
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    backgroundColor: "#25d366",
-    color: "#fff",
-    fontSize: "26px",
-    width: "60px",
-    height: "60px",
-    borderRadius: "50%",
-    textAlign: "center",
-    lineHeight: "60px",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-    zIndex: "9999",
-    textDecoration: "none",
-    transition: "background-color 0.3s ease"
-  });
-
-  // Hover effect
-  btn.addEventListener("mouseenter", () => btn.style.backgroundColor = "#128c7e");
-  btn.addEventListener("mouseleave", () => btn.style.backgroundColor = "#25d366");
-
-  // FontAwesome support check
-  if (!document.querySelector('link[href*="font-awesome"], link[href*="cdnjs.cloudflare.com/ajax/libs/font-awesome"]')) {
-    const fa = document.createElement("link");
-    fa.rel = "stylesheet";
-    fa.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css";
-    document.head.appendChild(fa);
-  }
-
-  document.body.appendChild(btn);
-})();
-</script>
 
 </body>
 </html>
